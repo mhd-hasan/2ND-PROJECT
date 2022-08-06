@@ -232,17 +232,65 @@ footer p{
 }
 
 
-@media only screen and (max-width: 688px) {
-   .nav-bar{
-    display: none;
+@media only screen and (max-width: 660px) {
+    .header-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
    }
-.nav-main {
-    width: 330px;
-    height: 260px;
-    margin: 0px;
+   header{
+    height: 900px;
+    width: 100%;
+    padding: 20px;
+   }
+   header a{
+    display: flex;
+   }
+   .header-info .button{
+    margin-right: 450px;
+   }
+.players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    
 }
+.player{
+    width: 100%;
+}
+.best-performer-Container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 10px;
+    height: 800px;
+    width: 100%;
 
 }
+.best-performer-Container .best-per-image{
+    margin-top: 160px;
+    width: 100%;
+}
+.best-per-details{
+    width: 100%;
+}
+.tournament-details{
+    margin-left: 10px;
+    width: 100%;
+}
+.tournament-details img{
+    width: 100%;
+}
+.high-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+}
+.high-container .high-video iframe{
+    width: 100%;
+    margin-top: -100px;
+    
+}
+}
+
 
 
 
