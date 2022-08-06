@@ -231,38 +231,51 @@ footer p{
     background-color: #FFFFFF;
 }
 
+/* medi queries for mobilephone */
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 700px) {
+    main{
+        margin-left: 2px;
+        
+    }
     .header-container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
    }
    header{
     height: 900px;
-    width: 100%;
-    padding: 20px;
+    width: 240%;
+    padding-left: 10px;
+   
+    
    }
    header a{
     display: flex;
+    font-size: 20px;
    }
    .header-info .button{
-    margin-right: 450px;
+    margin-right: 88%;
    }
 .players{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-top: 30px;
     
+    
+    
 }
 .player{
-    width: 100%;
+    width: 208%;
+}
+.player-details p{
+    width: 20%;
 }
 .best-performer-Container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-left: 10px;
     height: 800px;
-    width: 100%;
+    width: 230%;
 
 }
 .best-performer-Container .best-per-image{
@@ -271,6 +284,10 @@ footer p{
 }
 .best-per-details{
     width: 100%;
+
+}
+.best-performer-Container .info{
+    width: 20%;
 }
 .tournament-details{
     margin-left: 10px;
