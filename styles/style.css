@@ -1,313 +1,382 @@
 *{
-    font-family: 'Lato', sans-serif;
-    font-family: 'Libre Baskerville', serif;}
+    font-family: "Lato", sans-serif;
+    font-family: "Libre Baskerville", serif;
+  }
+  
+  /*-------------------
+   Navigation style 
+   -------------------*/
 
-   
-
-
-/* Navigation style */
-header{
+  header {
     height: 420px;
     width: 100%;
-    background-color:  #0b0b0b;
+    background-color: #0b0b0b;
     margin-top: 0px;
-    border-radius: 5px;
-}
-
-.nav-bar{
+    /* border-radius: 5px; */}
+  
+  .nav-bar {
     display: flex;
-
     justify-content: space-between;
-    padding: 2px 5px 4px 4px;
-     }
-     
-    .nav-bar .button a{
-        border-radius: 10px;
-        margin-top: 20px;
-        margin-right: 80px;
-        padding: 10px 40px;
-        background-color: rgb(247, 37, 93);
-    
-        
-    }
-
-    .nav-bar a:hover{
-        background-color: white;
-        color: black;
-        border-radius: 10px;
-    }
-
-header a{
+    /* padding: 2px 0px 4px 4px; */}
+  
+  .nav-bar .button a {
+    border-radius: 10px;
+    margin-top: 20px;
+    /* margin-right: 80px; */
+    padding: 10px 40px;
+    background-color: rgb(247, 37, 93);}
+  
+  .nav-bar a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;}
+  
+  header a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(245, 245, 252);
     font-weight: 900;
     padding: 10px 20px;
     margin-top: 5px;
-    margin-right: 10px;
+    /*margin-right: 10px;
+    */
     margin-top: 15pxpx;
     display: inline-block;
-    justify-content: space-between;
-    
-    }
-
-.header-container{
+    justify-content: space-between;}
+  
+  .header-container {
     display: flex;
-    margin-left: 20px;
-}
-.header-container img{
+    margin-left: 20px;}
+  
+  .header-container img {
     height: 350px;
-    width: 500px;
-    margin-right: 50px;
-
-}
-
-
-
-      .button a{
+    /* width: 500px; */
+    /* margin-right: 50px; */}
+  
+  .button a {
     padding: 10px 24px 10px 24px;
     text-decoration: none;
-    background-color: #E02C6D;
-    color: #FFFFFF;
+    background-color: #e02c6d;
+    color: #ffffff;
     border-radius: 10px;
+    margin-right: 5px;}
+  
+  .header-container .button a:hover {
+    background-color: white;
+    color: black;}
 
-      }
+  .header-container .button a {
+    margin-top: 0;}
 
-      .header-container .button a:hover{
-        background-color: white;
-        color: black;
-      }
-      .header-container .button a{
-        margin-top: 0;
-      }
-
-      .header-info h2{
+  .header-info h2 {
     color: rgb(254, 254, 254);
-    font-size: 54px;
+    font-size: 50px;
     font-weight: 700;
-    padding-right: 102px;
-    font-weight: 900;
+    padding-right: 102px;}
     
-      }
+  
+  .header-info .button a{
+    margin-right: 5px;}
 
+    .header-info .button a{
+      padding-left: 35px;}
+  
 
-    
-    
+  /*------------------------
+  players-Styles
+  -------------------------*/
 
-/* players-Styles */
-.players{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-grid-column-gap: 20px;
-grid-row-gap: 27px;
-margin-bottom: 20px;
-text-align: justify;
+  .top-players{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(129, 36, 36);
+    color: rgb(239, 237, 232);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;}
 
-    }
-
-.player{
+  .players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 100%;}
+  
+  .player {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+   /* / padding: 15px;
     box-shadow: 5px 7px 30px grey;
+    border-radius: 10px; */
+    width: 90%;}
+  
+   /* .player .player-details{
+    margin-left: 56px;
+  } */
+
+  .player-details h3 a {
+    text-decoration: none;}
+
+  .player-details{
+    margin-left: 20px;
+    width: 90%;}
+  
+  /*---- for center images----*/
+  .player-image{
+      text-align: center;
+      width: 100%;}
+
+  .player-image img {
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;}
+
+
+  /*-----------------------
+  best performer styles
+  ------------------------ */
+
+  .best-performer-Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-right: 200px;
+    margin-left: 250px; */
+    margin: 0px;
+    /* box-shadow: 5px 7px 30px grey; */
+    /* padding: 15px; */
+    border: #0b0b0b 1px solid;
+    height: 400px;
+    width: 100%;
     border-radius: 10px;
-    
-}
+    justify-content: center;}
+  
+  .best-performer-Container img {
+    height: 380px;
+    width: 99%;
+    /* padding: 10px; */}
+  
+  .best-per-details {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 10px;}
 
-.player-details h3 a{
-    text-decoration: none;
-}
-.players .player-image img{
-     width: 370px;
-    height: 326px;
-}
+  .best-per-details p{
+    width: 400px;}
 
-.best-performer-Container{
+  .best-per-details h2{
+    width: 300px;
+    padding: 0;}
+  
+  .best-performer-Container .button a:hover {
+    background-color: black;
+    color: white;}
+  
+  .best-performer-Container .best-per-name a {
+    text-decoration: none;}
+  
+  /* tournament details er baire je section ta ase, iteke ekta class dilam */
+  /* jate .tournament details ke center e ana jay */
+  .tournament-details-container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 50px;
+      border-radius: 10px;
+      border: 1px solid black;}
+
+  .tournament-details {
+    display: inline-block;
+    grid-template-columns: repeat(1, 1fr);
+    height: 600px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    /* margin-left: 250px; */
+    /* box-shadow: 5px 7px 30px grey; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    text-align: justify;
+    width: 100%;}
+  
+  
+  .tournament-details h2 {
+    text-align: center;}
+  
+  .tournament-details img {
+    height: 470px;
+    /* width: 750px; */
+    width: 100%;
+    border-radius: 10px;}
+  
+  .high-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-right: 200px;
-    margin-left: 250px;
-    box-shadow: 5px 7px 30px grey;
-    padding: 15px;
-    height: 400px;
-    width: 750px;
-    border-radius: 10px;
-    text-align: justify;
-}
-
-.best-performer-Container img{
-    height: 410px;
-    width: 500px;
-}
-.best-per-details{
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    
-}
-.best-performer-Container .button a:hover{
-    background-color: black;
-    color: white;
-}
-.best-performer-Container .best-per-name a{
-    text-decoration: none;
-}
-
-
-.tournament-details{
-    display: inline-block;
-    grid-template-columns: repeat(1,1fr);
-    height: 600px;
-    margin-top: 100px;
-    text-align: center;
-    margin-left: 250px;
-    box-shadow: 5px 7px 30px grey;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: justify;
-    width: 750px;
-    
-}
-.tournament-details h2{
-    text-align: center;
-}
-.tournament-details img{
-height: 400px;
-width: 750px;
-    
-}
-
-.high-container{
-    display:flex ;
-    justify-content: space-between;
     margin-top: 20px;
-
-
-}
-
-.high-info{
+    width: 100%;}
+  
+  .high-info {
     height: 300px;
     width: 400px;
-    margin-left: 130px;
-    margin-top: 60px;
-
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    justify-content: center;}
     
-}
-
-.high-video iframe{
-    margin-right: 100px;
+  
+  .high-video iframe {
+    /* margin-right: 100px; */
     border-radius: 20px;
-}
-
-
-footer{
-    margin-left: 45%;
-}
-
-footer a{
-    margin-left: 3%;
-    text-decoration: none;
-}
-footer p{
-    text-align: end;
-    margin-right: 10px;
-
-}
-
-.fa-facebook{
-    color: rgb(13, 96, 198);
-    background-color: #FFFFFF;
-}
-.fa-twitter{
-    color: rgb(13, 96, 198);
-    background-color: #FFFFFF;
-}
-.fa-whatsapp{
-    color: rgb(12, 236, 120);
-    background-color: #FFFFFF;
-}
-.a-instagram{
-    color: rgb(255, 13, 106);
-    background-color: #FFFFFF;
-}
-
-/* medi queries for mobilephone */
-
-@media only screen and (max-width: 700px) {
-    main{
-        margin-left: 2px;
-        
-    }
-    .header-container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-   }
-   header{
-    height: 900px;
-    width: 240%;
-    padding-left: 10px;
-   
-    
-   }
-   header a{
+    width: 100%;
+  height: 250px;}
+  
+  footer {
+    /* margin-left: 45%; */
     display: flex;
-    font-size: 20px;
-   }
-   .header-info .button{
-    margin-right: 88%;
-   }
-.players{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;}
+  
+  footer a {
+    /* margin-left: 3%; */
+    margin-left: 3px;
+    text-decoration: none;}
+  
+  footer p {
+      text-align: end;
+      margin-left: 10px;}
+  
+  .fa-facebook {
+    color: rgb(13, 96, 198);
+    background-color: #ffffff;}
+  
+  .fa-twitter {
+    color: rgb(13, 96, 198);
+    background-color: #ffffff;}
+  
+  .fa-whatsapp {
+    color: rgb(12, 236, 120);
+    background-color: #ffffff;}
+  
+  .a-instagram {
+    color: rgb(255, 13, 106);
+    background-color: #ffffff;}
+  
+  /* media queries for mobilephone */
+  
+  @media only screen and (max-width: 700px) {
+    /* main {
+      margin-left: 2px;
+    } */
+
+    /* -------------
+    header section 
+    ----------------*/
+  
+    .header-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);}
+  
+    header {
+      height: 850px;
+      /* width: 240%; */
+      /* padding-left: 10px; */}
+  
+    header a {
+      display: flex;
+      font-size: 15px;}
+  
+    /* eta add korlam */
+    .header-image  img{
+      width: 100%;}
+
+  .header-info h2{
+    font: 200px;
+    padding:0px;
+  }
+    .header-info .button {
+      /* margin-right: 88%; */
+      width: 30%;
+      /* margin-right: 5px; */
+    }
+
+    /* ----------------------
+    players styles
+    ------------------------*/
+  
+    .players {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 30px;
+    }
+    .top-players{
+    margin-left: 22px;
+    margin-bottom: 0px;
+    padding: 12px;
+    }
+    .player{
+      width: 90%;
+    }
+    .player-details{
+      margin-left: 22px;
+      width: 90%;
+
+    }
+  /* 
+    .player {
+      width: 208%;
+    }
+  
+    .player-details p {
+      width: 20%;
+    } */
+
+
+  /*-------------------------------
+   best performer container style
+  ------------------------------------ */
+
+    .best-performer-Container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* margin-left: 10px; */
+      height: 800px;
+      width: 100%;
+      /* padding: 0 15px; */
+      /* width: 230%; */}
+  
+     .best-per-image {
+      /* text-align: center; */
+      margin-top: 30px;}
+
+   .best-per-image img{
+    width: 100%;}
+
+    .best-per-details {
+      width: 90%;}
+  
+    .best-performer-Container .info {
+      /* width: 20%; */
+      width: auto;} 
+
+/*------------------------------ 
+tournament details style
+---------------------------- */
+
+      .tournament-details-container{
+        width: 100%;
+        height: 550px;}
     
-    
-    
-}
-.player{
-    width: 208%;
-}
-.player-details p{
-    width: 20%;
-}
-.best-performer-Container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-left: 10px;
-    height: 800px;
-    width: 230%;
+    .tournament-details-container img{
+      width: 100%;
+      height: 300px;}}
 
+      /*----------------------
+       highlights style
+      ----------------------------- */
+.high-container .high-info{
+  width: 100%;
+  padding-right: 200px;
+  padding-left: 1px ;
 }
-.best-performer-Container .best-per-image{
-    margin-top: 160px;
-    width: 100%;
-}
-.best-per-details{
-    width: 100%;
-
-}
-.best-performer-Container .info{
-    width: 20%;
-}
-.tournament-details{
-    margin-left: 10px;
-    width: 100%;
-}
-.tournament-details img{
-    width: 100%;
-}
-.high-container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    width: 100%;
-}
-.high-container .high-video iframe{
-    width: 100%;
-    margin-top: -100px;
-    
-}
-}
-
-
-
-
