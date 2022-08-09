@@ -7,9 +7,16 @@
   /*-------------------
    Navigation style 
    -------------------*/
+   a{
+    text-decoration: none;
+   }
+   *{
+    text-align: justify;
+   }
 
   header {
     height: 420px;
+    /* height: 100vh; */
     width: 100%;
     /* margin-left: 0px; */
     background-color: #0b0b0b;
@@ -58,16 +65,55 @@
     /* width: 500px; */
     /* margin-right: 50px; */}
   
-  .button a {
+  .button{
     padding: 10px 14px 10px 14px;
     text-decoration: none;
-    background-color: #e02c6d;
+    background-color: darkslategray;
     color: #ffffff;
     border-radius: 10px;
-    margin-right: 5px;}
-  
-  .header-container .button a:hover {
-    background-color: white;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: 1s all ease-in-out;
+  }
+  .button:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    background: white;
+    transition: 1s all ease-in-out;
+    z-index: -1;
+  } 
+  .button:hover:before{
+    /* animation: bounce 1s ease-in forwards; */
+    right: 0;
+  } 
+  /* @keyframes bounce {
+    0%{
+      right: -100%;
+    }
+    50%{
+      right: 0;
+    }
+    60%{
+      right: -10%;
+    }
+    70%{
+      right: 0;
+    }
+    80%{
+      right: -5%;
+    }
+    100%{
+      right: 0;
+    }
+  } */
+  .header-container .button:hover {
+    /* background-color: white; */
     color: black;}
 
   .header-container .button a {
@@ -96,11 +142,13 @@
   .top-players span{
     margin-left: 0px;
     margin-bottom: 10px;
-    background-color: rgb(129, 36, 36);
-    color: rgb(239, 237, 232);
+    /* background-color: rgb(129, 36, 36); */
+    color: rgb(17, 17, 16);
     padding: 10px;
     display: inline-block;
-    border-radius: 10px;}
+    border-radius: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 35px;}
 
   .players {
     display: grid;
@@ -197,7 +245,7 @@
       justify-content: center;
       width: 100%;
       margin-top: 50px;
-      height: 660px;
+      height: 690px;
       border-radius: 10px;
       border: 1px solid black;}
 
@@ -229,14 +277,27 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 20px;
-    width: 100%;}
+    /* padding-left: 20px; */
+    width: 100%;
+  }
   
   .high-info {
-    height: 300px;
     width: 100%;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     margin-top: 20px;
     justify-content: center;}
+
+    .high-info p{
+      margin-right: 20px;
+    }
+
+    .high-video{
+      padding: 20px;
+    }
+
+    .high-video iframe{
+      border-radius: 20px;
+    }
     
     
   
@@ -248,14 +309,20 @@
 
   footer {
     /* margin-left: 45%; */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     justify-content: center;
     align-items: center;}
   
   footer a {
     /* margin-left: 3%; */
-    margin-left: 3px;
-    text-decoration: none;}
+padding-left: 30px;
+    text-decoration: none;
+  }
+
+  .footer-anchor{
+    text-align: center;
+  }
   
   footer p {
       text-align: end;
@@ -412,16 +479,14 @@ tournament details style
       /*----------------------
        highlights style
       ----------------------------- */
-.high-container .high-info{
+ .high-container{
   width: 100%;
-  /* padding-right: 200px; */
-  padding-left: 0px ;
-}
-.high-container .high-info h3{
-  margin-left: 10px;
-}
-
-.high-container .high-info p{
-  margin-left: 10px;
-}
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+ }
+ .high-info{
+  height: 170px;
+  width: 90%;
+ }
+      
 }
