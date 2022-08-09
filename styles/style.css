@@ -121,9 +121,9 @@
 
   .header-info h2 {
     color: rgb(254, 254, 254);
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
-    padding-right: 102px;}
+    padding-right: 10px;}
     
   
   .header-info .button a{
@@ -377,7 +377,7 @@ padding-left: 30px;
       }
 
   .header-info h2{
-    font-size: 30px;
+    font-size: 25px;
     padding: 0px;
     display: inline-block;
   }
