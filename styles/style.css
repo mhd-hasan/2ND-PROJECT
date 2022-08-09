@@ -377,10 +377,11 @@ padding-left: 30px;
       }
 
   .header-info h2{
-    font-size: 25px;
+    font-size: 35px;
     padding: 0px;
     display: inline-block;
   }
+
     .header-info .button a {
       /* /* margin-right: 88%; */
      display: inline-block;
